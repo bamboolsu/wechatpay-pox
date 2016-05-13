@@ -7,7 +7,7 @@
 <title>微信支付</title>
 </head>
 <body>
-	<img src="${code}">
+	<img src="${code}"> URL is: ${code} </img>
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript">
 		/* 查询是否支付成功  */

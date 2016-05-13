@@ -74,6 +74,8 @@ public class OrderServiceImpl implements OrderService {
 		String xml = XmlUtil.object2Xml(o, Order.class);
 		// 统一下单地址
 		String url = OrderConstant.PLACEANORDER;
+		System.out.println("lsu  RequestUrl is: \n" + url);
+		System.out.println("lsu  Request parameter is: \n" + xml);
 		
 		// 调用微信统一下单地址
 		String returnXml = HttpUtil.sendPost(url, xml);

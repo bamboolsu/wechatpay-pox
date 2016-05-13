@@ -41,6 +41,7 @@ public class PayResultServlet extends HttpServlet {
 		pw.flush();
 		pw.close();
 		System.out.println("ordre pay is succssful. leosu");
+		request.getRequestDispatcher("/WEB-INF/jsp/paySuccess.jsp").forward(request, response);
 	}
 
 }
